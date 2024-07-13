@@ -25,12 +25,12 @@ config =
 You can try the example configuration above out by running the following command:
 
 ```bash
-elm-review --template jiegillet/elm-review-syntax-count/example --report=json --extract
+elm-review --template jiegillet/elm-review-syntax-count/preview --report=json --extract
 ```
 
 To have a better view of the data, if you have `jq` you can use
 
 ```bash
-elm-review --template jiegillet/elm-review-syntax-count/example --report=json --extract \
+elm-review --template jiegillet/elm-review-syntax-count/preview --report=json --extract \
   | jq '.extracts .CountExpressions | map_values(to_entries | sort_by(.value) | reverse | from_entries)'
 ```
