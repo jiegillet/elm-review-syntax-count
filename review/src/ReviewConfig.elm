@@ -54,7 +54,7 @@ config =
         |> Rule.ignoreErrorsForDirectories [ "tests/" ]
     , NoDeprecated.rule NoDeprecated.defaults
     , NoExposingEverything.rule
-    , NoForbiddenWords.rule [ "REPLACEME" ]
+    , NoForbiddenWords.rule [ ]
     , NoImportingEverything.rule []
     , NoMissingTypeAnnotation.rule
     , NoMissingTypeAnnotationInLetIn.rule
